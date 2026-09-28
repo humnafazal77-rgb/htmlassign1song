@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- ===== Document Metadata ===== -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Song Lyrics | Can't Help Falling in Love</title>
+    <meta name="description" content="A semantic HTML5 page presenting the lyrics of my favourite song, with media and an interactive feedback form.">
+    <meta name="author" content="200662881 humna">
+</head>
+<body>
+
+    <!-- Page Header: Song Title & Artist -->
+    <header>
+        <h1>Can't Help Falling in Love</h1>
+        <h2>by Elvis Presley</h2>
+        <p><em>Blue Hawaii, <time datetime="1961">1961</time></em></p>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+
+        <!-- Media Section: Album Cover & Audio -->
+        <section aria-labelledby="media-heading">
+            <h2 id="media-heading">Listen &amp; Look</h2>
+            <figure>
+                <img src="songimage.webp" alt="Album cover art for Can't Help Falling in Love by Elvis Presley" width="150">
+                <figcaption>Official album cover for Can't Help Falling in Love</figcaption>
+            </figure>
+
+            <figure>
+                <audio controls>
+                    <source src="cant-help-falling-in-love.mp3.mpeg">
+                </audio>
+                <figcaption>Preview clip of Can't Help Falling in Love</figcaption>
+            </figure>
+        </section>
+
+        <!-- Lyrics Section --> 
+        <article aria-labelledby="lyrics-heading">
+            <h2 id="lyrics-heading">Lyrics</h2>
+
+            <section aria-labelledby="verse1-heading">
+                <h3 id="verse1-heading">Verse 1</h3>
+                <p>
+                    wise men say<br>
+                    only fools rush in <br>
+                    but I can't help falling in love with 
+                </p>
+            </section>
+
+            <section aria-labelledby="chorus-heading">
+                <h3 id="chorus-heading">Chorus</h3>
+                <p>
+                    shall i stay<br>
+                    would it be a sin<br>
+                    if i cant help falling in love with you
+                </p>
+            </section>
+
+            <section aria-labelledby="verse2-heading">
+                <h3 id="verse2-heading">Verse 2</h3>
+                <p>
+                    like a river flows<br>
+                    surely to the sea<br>
+                    darling so it goes<br>
+                    some things are meant to be
+                </p>
+            </section>
+
+            <section aria-labelledby="bridge-heading">
+                <h3 id="bridge-heading">Bridge</h3>
+                <p>
+                    take my hand<br>
+                    take my whole life too<br>
+                    for I can't help falling in love with you<br>
+                </p>
+            </section>
+
+            <section aria-labelledby="outro-heading">
+                <h3 id="outro-heading">Outro</h3>
+                <p>
+                    for i cant help falling in love with you <br>
+                    no i cant help falling in love with you <br>
+                </p>
+            </section>
+        </article>
+
+        <!-- Interactive Form -->
+        <section aria-labelledby="feedback-heading">
+            <h2 id="feedback-heading">Favourite Lyric Feedback</h2>
+            <p>Tell us which line from this song hit you the hardest.</p>
+
+         <!-- Code for the Form -->
+
+            <form action="#" method="post">
+                <div>
+                    <label for="fan-name">Your Name:</label><br>
+                    <input type="text" id="fan-name" name="fan_name" required>
+                </div>
+
+                <div>
+                    <label for="fan-email">Your Email:</label><br>
+                    <input type="email" id="fan-email" name="fan_email" required>
+                </div>
+
+                <div>
+                    <label for="fav-section">Favourite Part of the Song:</label><br>
+                    <select id="fav-section" name="favourite_section" required>
+                        <option value="">-- Choose a part --</option>
+                        <option value="verse1">Verse 1</option>
+                        <option value="chorus">Chorus</option>
+                        <option value="verse2">Verse 2</option>
+                        <option value="bridge">Bridge</option>
+                        <option value="outro">Outro</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="comments">Why does this line matter to you?</label><br>
+                    <textarea id="comments" name="comments" rows="4" cols="40" required></textarea>
+                </div>
+
+                <div>
+                    <button type="submit">Submit Feedback</button>
+                </div>
+            </form>
+        </section>
+
+    </main>
+
+    <!-- ===== Page Footer ===== -->
+    <footer>
+        <p>&copy; 200662881 humna.</p>
+</footer>
+
+</body>
+</html>
